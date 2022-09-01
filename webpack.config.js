@@ -7,6 +7,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
+    // for GET url error
+    //publicPath: '/'
   },
   mode: "development",
   resolve: {
@@ -31,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.(sass|scss|css)$/i,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"]
       }
     ]
   },
@@ -45,6 +47,7 @@ module.exports = {
     })
   ],
   devServer: {
+    //historyApiFallback: true
     allowedHosts: path.join(__dirname, "dist"),
     compress: true,
     port: 3000
