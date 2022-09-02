@@ -6,9 +6,9 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
     // for GET url error
-    //publicPath: '/'
+    publicPath: "/"
   },
   mode: "development",
   resolve: {
@@ -47,9 +47,9 @@ module.exports = {
     })
   ],
   devServer: {
-    //historyApiFallback: true
-    allowedHosts: path.join(__dirname, "dist"),
-    compress: true,
-    port: 3000
+    historyApiFallback: true
+    // allowedHosts: path.join(__dirname, "dist"),
+    // compress: true,
+    // port: 3000
   }
 };
