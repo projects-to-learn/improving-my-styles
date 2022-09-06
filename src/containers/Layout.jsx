@@ -1,11 +1,14 @@
+/* eslint-disable import/no-unresolved */
 import React from "react";
-import Header from "../components/Header";
+import Header from "@components/Header";
+
+import "@styles/containers/layout.scss";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="spacer layer1">
       <Header />
-      {children}
+      <div className="px-4">{children}</div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
+/* eslint-disable import/no-unresolved */
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./routes/App";
+import App from "@routes/App";
 
 ReactDOM.render(
   <React.StrictMode>
