@@ -1,0 +1,36 @@
+.spacer {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 639px) {
+  .spacer {
+    aspect-ratio: 960/600;
+  }
+}
+
+/* sm, md */
+@media (min-width: 640px) {
+  .spacer {
+    aspect-ratio: 960/400;
+  }
+}
+
+/* lg, xl */
+@media (min-width: 1024px) {
+  .spacer {
+    aspect-ratio: 960/300;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .spacer {
+    aspect-ratio: 960/200;
+  }
+}
+
+.layer1 {
+  background-image: url("../../assets/figures/layered-waves.svg");
+}

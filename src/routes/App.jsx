@@ -2,7 +2,7 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
-import "@styles/global.scss";
+import "@styles/global.css";
 
 import Layout from "@containers/Layout";
 import Home from "@pages/Home";

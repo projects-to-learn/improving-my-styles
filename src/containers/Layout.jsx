@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "@components/Header";
 
-import "@styles/containers/layout.scss";
+import "@styles/containers/layout.css";
 
 const Layout = ({ children }) => {
   return (

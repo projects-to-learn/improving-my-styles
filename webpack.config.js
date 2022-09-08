@@ -16,6 +16,8 @@ module.exports = {
     alias: {
       "@components": path.resolve(__dirname, "src/components/"),
       "@containers": path.resolve(__dirname, "src/containers/"),
+      "@figures": path.resolve(__dirname, "src/assets/figures"),
+      "@images": path.resolve(__dirname, "src/assets/images"),
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@routes": path.resolve(__dirname, "src/routes/"),
       "@styles": path.resolve(__dirname, "src/styles/")
@@ -39,8 +41,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.(sass|scss|css)$/i,
-        use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"]
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader", "postcss-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        type: "asset"
       }
     ]
   },
