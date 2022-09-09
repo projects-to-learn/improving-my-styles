@@ -7,15 +7,15 @@ const Header = () => {
     <nav className="flex justify-end">
       <ul className="flex w-4/5">
         <li
-          className="py-3 px-4 text-dark-40
-          hover:font-bold hover:text-dark-10"
-        >
+          className="py-3 px-4 text-gray-100
+          hover:font-bold hover:text-gray-50
+          active:text-gray-200">
           <Link to="/">Home</Link>
         </li>
         <li
-          className="py-3 px-4 text-dark-40
-          hover:font-bold hover:text-dark-10"
-        >
+          className="py-3 px-4 text-gray-100
+          hover:font-bold hover:text-gray-50
+          active:text-gray-200">
           <Link to="/login">Login</Link>
         </li>
       </ul>
